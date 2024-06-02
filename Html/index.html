@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover the latest trends in fashion for 
+    women and men at SA FashionStyle. Shop our wide selection of clothes, bags,
+    jewelry, and more. Elevate your style with our curated collections.">
+    <meta name="keywords" content="clothes, women, men, fashion, bags, jewelry, SA FashionStyle, latest trends, stylish clothing, accessories">
+    <meta name="author" content="SA_FashionStyle">
+    <link rel="icon" href="./../images/logowhite.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./../Style/style.css">
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <!-- icon -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- bootstrap
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  -->
+    <title>SA__FashionStyle</title>
+</head>
+<body>
+    <header class="container">
+        <div class="header_top">
+              <div class="header_social">
+                <a href="https://www.instagram.com/sa__fashionstyle/?igsh=eWpjbWFqc3FlbGhl" target="_blank">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+                <a href="https://www.facebook.com/people/SA_Fashionstyle/100088622209447/?mibextid=LQQJ4d" target="_blank">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+                <a href="https://wa.me/201007738790" target="_blank">
+                    <ion-icon name="logo-whatsapp"></ion-icon>
+                </a>
+              </div>
+              <img src="../images/logo_block.jpg" alt="page logo" id="logo">
+              <div class="header_actions">
+                   <a href="login.html">
+                    <ion-icon name="person-circle-outline"></ion-icon>
+                   </a>
+                   <a href="cart.html">
+                     <ion-icon name="cart-outline"></ion-icon>
+                   </a>
+              </div>
+        </div>
+        <nav>
+            <menu>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </menu>
+        </nav>
+    </header>
+    <!-- slider -->
+    <div class="slider">
+        <div class="slides">
+            <div class="slide">
+                <div class="slide-content">
+                   <img src="../images/background/slide16_bdfdea89-9df3-48da-9f0a-888fd50a83d5.webp">
+                   <div class="text">
+                    <h2>Get up to 30% Off New Arrivals</h2>
+                    <a href="shop.html" class="shop-btn">Shop Now</a>
+                   </div>
+                </div>
+                <div class="slide-content">
+                    <img src="../images/background/background2.webp">
+                    <div class="text">
+                     <h2>Get up to 30% Off New Arrivals</h2>
+                     <a href="shop.html" class="shop-btn">Shop Now</a>
+                    </div>
+                 </div>
+                 <div class="slide-content">
+                    <img src="../images/background/background3.webp">
+                    <div class="text">
+                     <h2>Get up to 30% Off New Arrivals</h2>
+                     <a href="shop.html" class="shop-btn">Shop Now</a>
+                    </div>
+                 </div>
+            </div>
+        </div>
+        <div class="navigation">
+            <button class="prev" onclick="prevSlider();">
+                <ion-icon name="arrow-back-outline"></ion-icon>
+            </button>
+            <button class="next" onclick="nextSlider();">
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+            </button>
+        </div>
+    </div>
+    <!-- info -->
+    <div class="information">
+        <div class="info">
+            <div class="info-icon">
+                <img src="../images/global-distribution.png" alt="global-distribution" >
+            </div>
+            <div class="info-text">
+                <h3>Shipping Worldwide</h3>
+                <p> Free shipping on all US order or order above $100</p>
+            </div>
+        </div>
+        <div class="info">
+            <div class="info-icon">
+                <img src="../images/delivery-status.png" alt="delivery-status" >
+            </div>
+            <div class="info-text">
+                <h3>14 Days Return</h3>
+                <p>Simply return it within 30 days for an exchange.</p>
+            </div>
+        </div>
+        <div class="info">
+            <div class="info-icon">
+                <img src="../images/check.png" alt="Security" >
+            </div>
+            <div class="info-text">
+                <h3>Security Payment</h3>
+                <p>We ensure secure payment with PEV</p>
+            </div>
+        </div>
+        <div class="info">
+            <div class="info-icon">
+                <img src="../images/24-hours-support.png" alt="24-hours-support" >
+            </div>
+            <div class="info-text">
+                <h3>24/7 Support</h3>
+                <p>Contact us 24 hours a day, 7 days a week</p>
+            </div>
+        </div>
+    </div>
+    <!-- Top Products -->
+    <div class="top_products">
+        <div class="container">
+            <div class="header">
+                <h3>Trending Products</h3>
+                <p>Follow the most popular trends and get exclusive items from Foesta shop.</p>
+            </div>
+            <div class="products">
+                <div class="product-card">
+                    <div class="card-img">
+                        <img src="../images/woman/ultimate-crop-bandeau-tops_01.webp">
+                        <a href=""  class="addToCart">
+                            <ion-icon name="cart-outline" class="Cart"></ion-icon>
+                        </a>
+                    </div>
+                    <div class="card-info">
+                         <h4 class="product-name">Ultimate Crop Bandeau Tops</h4>
+                         <h5 class="product-price">$89.00</h5>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="card-img">
+                        <img src="../images/woman/Pieces-short-sleeve-sweater_01.webp">
+                        <a href=""  class="addToCart">
+                            <ion-icon name="cart-outline" class="Cart"></ion-icon>
+                        </a>
+                    </div>
+                    <div class="card-info">
+                         <h4 class="product-name">Pieces Short Sleeve Sweater</h4>
+                         <h5 class="product-price">$100.00</h5>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="card-img">
+                        <img src="../images/woman/image67.webp">
+                        <a href=""  class="addToCart">
+                            <ion-icon name="cart-outline" class="Cart"></ion-icon>
+                        </a>
+                    </div>
+                    <div class="card-info">
+                         <h4 class="product-name">Oversized T-shirt Multi-colors</h4>
+                         <h5 class="product-price">$50.00</h5>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="card-img">
+                        <img src="../images/woman/Simona-Ribbed-Cardigan_05.webp">
+                        <a href=""  class="addToCart">
+                            <ion-icon name="cart-outline" class="Cart"></ion-icon>
+                        </a>
+                    </div>
+                    <div class="card-info">
+                         <h4 class="product-name">Simona Ribbed Cardigan</h4>
+                         <h5 class="product-price">$82.00 - $89.00</h5>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="card-img">
+                        <img src="../images/Accessories/sctf.webp">
+                        <a href=""  class="addToCart">
+                            <ion-icon name="cart-outline" class="Cart"></ion-icon>
+                        </a>
+                    </div>
+                    <div class="card-info">
+                         <h4 class="product-name">Miley Triangle Hair Scarf</h4>
+                         <h5 class="product-price">$22.00</h5>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="card-img">
+                        <img src="../images/woman/Jacket-_-Sun-Bleached_01.webp">
+                        <a href=""  class="addToCart">
+                            <ion-icon name="cart-outline" class="Cart"></ion-icon>
+                        </a>
+                    </div>
+                    <div class="card-info">
+                         <h4 class="product-name">Denim Jacket Sun Bleached</h4>
+                         <h5 class="product-price">$189.00</h5>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="card-img">
+                        <img src="../images/woman/t-shirt.webp">
+                        <a href=""  class="addToCart">
+                            <ion-icon name="cart-outline" class="Cart"></ion-icon>
+                        </a>
+                    </div>
+                    <div class="card-info">
+                         <h4 class="product-name">Essentials Jumpman Boxy T-shirt</h4>
+                         <h5 class="product-price">$42.00</h5>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="card-img">
+                        <img src="../images/Jewelry/Butterfly-Charm-Hoop-Earring_03.webp">
+                        <a href=""  class="addToCart">
+                            <ion-icon name="cart-outline" class="Cart"></ion-icon>
+                        </a>
+                    </div>
+                    <div class="card-info">
+                         <h4 class="product-name">Butterfly Charm Hoop Earrings</h4>
+                         <h5 class="product-price">$68.00</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- news -->
+    <div class="news">
+        <div class="news-text">
+            <h4>Newsletter</h4>
+            <p>
+                Subscribe to our newsletter and get 20% off your first purchase
+            </p>
+        </div>
+        <div class="Subscribe-form">
+            <input type="email" name="email" placeholder="Enter Your Email">
+            <button type="submit" value="submit">
+                <img src="../images/send.png" alt="send-data" width="30"/>
+            </button>
+        </div>
+    </div>
+    <footer class="footer">
+         <div class="footer-top">
+            <div class="footer-logo">
+                <img src="../images/logo_block.jpg" alt="logo" width="140">
+                <p>The customer is at the heart of our unique business model, which includes design.</p>
+            </div>
+            <div class="footer-list">
+                <div class="list">
+                    <h4>SHOPPING</h4>
+                    <ul>
+                        <li><a href="#">Clothing Store</a></li>
+                        <li><a href="#">Trending Shoes</a></li>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">Sale</a></li>
+                    </ul>
+                </div>
+                <div class="list">
+                    <h4>Customer Services</h4>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Payment Methods</a></li>
+                        <li><a href="#">Delivary</a></li>
+                        <li><a href="#">Return & Exchanges</a></li>
+                    </ul>
+                </div>
+    
+            </div>
+         </div>
+        <div class="footer-bottom">
+            <p class="footer-company-name">
+                © 2024 All right reserved.Made with <ion-icon name="heart"></ion-icon>
+                 by <a href="https://www.upwork.com/freelancers/~01a11a163a8ee98a35" id="author">Amira Alaa</a>
+            </p>
+        </div>
+    </footer>
+    <script src="../JavaScript/main.js"></script>
+</body>
+</html>
