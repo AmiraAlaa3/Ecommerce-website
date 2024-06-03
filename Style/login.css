@@ -1,0 +1,79 @@
+#login{
+    min-height: calc(100vh - 150px);
+    width: 100%;
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+#login .container{
+    width: 600px;
+    padding: 0 16px;
+}
+#login .container h1{
+    text-align: center;
+}
+.section-header{
+    font-size: 36px;
+    margin-bottom: 16px;
+}
+#form{
+    margin-top: 30px;
+
+}
+#form label{
+    margin-bottom: 8px;
+    display: block;
+    font-size: 16px;
+}
+#form input{
+    height: 50px;
+    width: 100%;
+    padding: 0 15px;
+    border: 1px solid rgba(17, 17, 17, 0.55);
+    border-radius: 44px;
+    font-size: 16px;
+    color: rgba(17,17,17);
+    background: rgba(255,255,255);
+    margin-bottom: 24px;
+}
+#form input:focus {
+    outline: 0;
+    box-shadow: 0 0 5px 2px rgb(17 17 17 / 15%);
+}
+#form .submit{
+    margin: 24px 0;
+    text-align: center;
+}
+#form .submit button{
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #000;
+    color: white;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 35px;
+    border-radius: 44px;
+    margin: 20px 0 10px;
+    border: none;
+}
+#form .submit #signup{
+    font-size: 14px;
+    margin-top: 4px;
+    display: block;
+    border: none;
+    box-shadow: none;
+    text-decoration: underline !important;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 1px !important;
+}
+.alert{
+    display: none;
+    color: red;
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 4px;
+}

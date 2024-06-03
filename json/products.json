@@ -1,0 +1,139 @@
+[ 
+    {
+        "id":1,
+        "name": "Retro Sunglasses",
+        "price": "$225.00",
+        "images":[
+            "../images/Accessories/Retro-sunglasses_03.webp"
+        ],
+        "category": "Accessories"
+    },
+    {
+        "id":2,
+        "name": "Miley Triangle Hair Scarf",
+        "price": "$22.00",
+        "images":[
+            "../images/Accessories/scrf1.webp",
+            "../images/Accessories/scrf2.webp",
+            "../images/Accessories/scrf3.webp"
+        ],
+        "category": "Accessories"
+    },
+    {
+        "id":3,
+        "name": "Platform Canvas Sneakers",
+        "price": "$77.00",
+        "images":[
+              "../images/Accessories/Platform-Canvas-Sneakers_03.webp"
+        ],
+        "category": "Accessories"
+       
+    },
+    {
+        "id":4,
+        "name": "Quilted Heeled Mule Sandal",
+        "price": "$128.00",
+        "images":[
+              "../images/Accessories/Quilted-Heeled-Mule-Sandal_01.webp"
+        ],
+        "category": "Accessories"
+    },
+    {
+        "id":5,
+        "name": "Ultimate Crop Bandeau Tops",
+        "price": "$22.00",
+        "images":[
+            "../images/Woman/ultimate-crop-bandeau-tops_black_01.webp",
+            "../images/Woman/ultimate-crop-bandeau-tops_black_02.webp"
+        ],
+        "category": "Woman"
+    },
+    {
+        "id":6,
+        "name": "Adilette Slide Sandal",
+        "price": "$85.00",
+        "images":[
+            "../images/Accessories/Adilette-Slide-Sandal_01.webp",
+            "../images/Accessories/Adilette-Slide-Sandal_color_01.webp"
+        ],
+        "category": "Accessories"
+    },
+    {
+        "id":7,
+        "name": "Pieces Short Sleeve Sweater",
+        "price": "$100.00",
+        "images":[
+            "../images/Woman/Pieces-short-sleeve-sweater_01.webp",
+            "../images/Woman/Pieces-short-sleeve-sweater_02.webp",
+            "../images/Woman/Pieces-short-sleeve-sweater_03.webp"
+        ],
+        "category": "Woman"
+    },
+    {
+        "id":8,
+        "name": "Simona Ribbed Cardigan",
+        "price": "$82.00 - $89.00",
+        "images":[
+            "../images/Woman/Simona-Ribbed-Cardigan_05.webp",
+            "../images/Woman/Simona-Ribbed-Cardigan_03.webp",
+            "../images/Woman/SW1.webp"
+        ],
+        "category": "Woman"
+    },
+    {
+        "id":9,
+        "name": "Oversized T-shirt Multi-colors",
+        "price": "$50.00",
+        "images":[
+            "../images/Woman/image68.webp",
+            "../images/Woman/image67.webp"
+        ],
+        "category": "Woman"
+    },
+    {
+        "id":10,
+        "name": "Classic Oversized Sweatshirt",
+        "price": "$158.00",
+        "images":[
+            "../images/Woman/classic-oversized-sweatshirt_01.webp",
+            "../images/Woman/classic-oversized-sweatshirt_04.webp"
+        ],
+        "category": "Woman"
+    },
+    {
+        "id":11,
+        "name": "Straw Floppy Hat",
+        "price": "$54.00",
+        "images":[
+            "../images/Accessories/straw-floppy-hat_03.webp"
+        ],
+        "category": "Accessories"
+    },
+    {
+        "id":12,
+        "name": "Cat-Eye Glasses 20257",
+        "price": "$86.00",
+        "images":[
+            "../images/Accessories/sunglasses1.webp"
+        ],
+        "category": "Accessories"
+    },
+    {
+        "id":13,
+        "name": "Rimless Glasses 3930",
+        "price": "$88.00",
+        "images":[
+            "../images/Accessories/sunglasses2.webp"
+        ],
+        "category": "Accessories"
+    },
+    {
+        "id":14,
+        "name": "Aqua Round Glasses 171",
+        "price": "$52.00",
+        "images":[
+            "../images/Accessories/sunglasses3.webp"
+        ],
+        "category": "Accessories"
+    }
+]
