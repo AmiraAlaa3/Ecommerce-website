@@ -206,6 +206,13 @@ header nav li:hover::after {
     .products .content{
         grid-template-columns: repeat(2, 1fr);
     }
+    .productDetails .details .buttons{
+        flex-wrap: wrap;
+    }
+    .productDetails .details #btn_add{
+        width: 100%;
+        margin-top: 20px;
+    }
     .news{
         height: 300px;
         flex-wrap: wrap;
@@ -261,5 +268,14 @@ header nav li:hover::after {
         flex-wrap: wrap;
         gap: 20px;
     }
-
+    .productDetails .details .buttons{
+        flex-wrap: wrap;
+    }
+    .productDetails .details #btn_add{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .productDetails {
+        grid-template-columns: 1fr;
+    }
 }

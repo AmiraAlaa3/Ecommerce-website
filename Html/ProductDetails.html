@@ -9,8 +9,10 @@
         <meta name="keywords" content="clothes, women, men, fashion, bags, jewelry, SA FashionStyle, latest trends, stylish clothing, accessories">
         <meta name="author" content="SA_FashionStyle">
         <link rel="icon" href="./../images/logowhite.jpg" type="image/x-icon">
+        <!-- css -->
+    
+        <link rel="stylesheet" href="../Style/productDetails.css">
         <link rel="stylesheet" href="../Style/main.css">
-        <link rel="stylesheet" href="../Style/login.css">
         <!-- Google font -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,26 +23,6 @@
         <title>SA__FashionStyle</title>
     </head>
 <body>
-    <!-- 
-        {
-//     "id":13,
-//     "name": "Rimless Glasses 3930",
-//     "price": "$88.00",
-//     "images":[
-//         "../images/Accessories/sunglasses2.webp"
-//     ],
-//     "category": "Accessories"
-// },
-// {
-//     "id":14,
-//     "name": "Aqua Round Glasses 171",
-//     "price": "$52.00",
-//     "images":[
-//         "../images/Accessories/sunglasses3.webp"
-//     ],
-//     "category": "Accessories"
-// },
-     -->
     <header class="container">
         <div class="header_top">
               <div class="header_social">
@@ -74,23 +56,31 @@
             </menu>
         </nav>
     </header>
-    <section id="login">
-       <div class="container">
-        <h1 class="section-header">Create account</h1>
-        <div id="form">
-            <input type="text" name="fname" placeholder="First Name" id="fname">
-            <input type="text" name="lname" placeholder="Last Name" id="lname">
-            <input type="text" name="email" placeholder="Email" id="email">
-            <input type="password" name="Password" placeholder="Password" id="password">
-            <div class="submit">
-                <button id="btn-login">Create</button> 
-                <a href="index.html" id="signup">Return to store</a>
-            </div>  
+    <main>
+        <div class="container">
+        <div class="productDetails">
+            <div class="images">
+                <img id="product_image" src="" alt="productDetails">
+            </div>
+            <div class="details">
+                <span class="category_name">Categories</span>
+                <h2 class="product_name">Product Name</h2>
+                <h3 class="product_price">Product price</h3>
+                <p class="product_des">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio quos, similique deleniti tempore voluptatem dolore asperiores odit provident sit blanditiis molestiae laborum, excepturi corrupti corporis delectus. Alias exercitationem qui voluptatem.</p>
+                <div class="buttons">
+                    <div class="counts">
+                          <button id="minus" class="counts_btns">-</button>
+                          <input type="number" inputmode="numeric" name="productCount" min="1" step="1" max="999"
+                           class="product_count" id="productCount" value="1">
+                          <button id="plus" class="counts_btns">+</button>
+                    </div>
+                    <button id="btn_add">Add To Cart</button>
+                </div>
+            </div>
         </div>
-       </div>
-        
-    </section>
-    <footer class="footer login-footer">
+        </div>
+    </main>
+    <footer class="footer">
         <div class="footer-top">
            <div class="footer-logo">
                <img src="../images/logo_block.jpg" alt="logo" width="140">
@@ -121,9 +111,12 @@
        <div class="footer-bottom">
            <p class="footer-company-name">
                © 2024 All right reserved.Made with <ion-icon name="heart"></ion-icon>
-                by <a href="https://www.upwork.com/freelancers/~01a11a163a8ee98a35" id="author">Amira Alaa</a>
+                by <a href="https://www.upwork.com/freelancers/~01a11a163a8ee98a35" target="_blank" id="author">Amira Alaa</a>
            </p>
        </div>
-   </footer>
+    </footer>
+    <button id="scrollBtn"><ion-icon name="arrow-up-outline" id="btn-up"></ion-icon></button>
+    <script src="../JavaScript/main.js"></script>
+    <script src="../JavaScript/getDetails.js"></script>
 </body>
 </html>

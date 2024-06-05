@@ -1,5 +1,6 @@
 var productsContainer=[];
 let linkName=document.getElementsByClassName("categories_link");
+
 getData()
 async function getData(category = null){
     let response = await  fetch('../json/products.json');
@@ -15,7 +16,7 @@ function displayProducts(){
     for(let i=0;i<productsContainer.length;i++ ){
         container+=`
         <div class="product-card">
-        <div class="card-img">
+        <div class="card-img" onclick=displayDetails(${productsContainer[i].id});>
             <img src=${productsContainer[i].images[0]}>
             <a href=""  class="addToCart">
                 <ion-icon name="cart-outline" class="Cart"></ion-icon>
@@ -53,4 +54,8 @@ Array.from(linkName).forEach(function(element){
 function toggleSidebar() {
     var sidebar = document.querySelector(".aside");
     sidebar.classList.toggle("open");
+}
+
+function displayDetails(productId){
+    window.location.href = `ProductDetails.html?productId=${productId}`;
 }
