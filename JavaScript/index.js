@@ -4,6 +4,7 @@ window.addEventListener("load",function(){
         theChecker();
         playSlider();
     }
+    getTrendingProducts();
 });
 
 function nextSlider() {
@@ -57,9 +58,9 @@ function playSlider() {
             currentSlide = 1;
         }
         theChecker();
-    }, 5000);
+    }, 3000);
 }
-getTrendingProducts();
+
 async function getTrendingProducts() {
     let response = await fetch('../json/products.json');
     let products = await response.json();
@@ -70,9 +71,9 @@ function displayTrendingProducts(trendingProducts){
     let content = ``;
     for(let i = 0 ; i < trendingProducts.length ; i++){
         content += `
-        <div class="product-card">
-        <div class="card-img" onclick=displayDetails(${trendingProducts[i].id});>
-            <img src=${trendingProducts[i].images[0]}>
+        <div class="product-card"  data-id="${trendingProducts[i].id}">
+        <div class="card-img">
+            <img src=${trendingProducts[i].images[0]}  onclick=displayDetails(${trendingProducts[i].id});>
             <a href=""  class="addToCart">
                 <ion-icon name="cart-outline" class="Cart"></ion-icon>
             </a>
@@ -83,8 +84,24 @@ function displayTrendingProducts(trendingProducts){
         </div>
     </div>`
     }
+    
     document.querySelector(".top_products .products").innerHTML = content;
+
+    let addToCartLinks = document.querySelectorAll('.addToCart');
+    addToCartLinks.forEach(link => {
+        link.addEventListener('click', function(event) {
+            event.preventDefault();
+            let productCard = event.target.closest('.product-card');
+            if (productCard && productCard.dataset.id) {
+                let id_product = productCard.dataset.id;
+                console.log(id_product)
+                addToCart(id_product);
+            }
+        });
+    });
 }
+
+
 
 function displayDetails(productId){
     window.location.href = `ProductDetails.html?productId=${productId}`;

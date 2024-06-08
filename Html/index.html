@@ -39,7 +39,7 @@
                    <a href="login.html">
                     <ion-icon name="person-circle-outline"></ion-icon>
                    </a>
-                   <a href="cart.html">
+                   <a href="#" class="icon-cart">
                      <ion-icon name="cart-outline"></ion-icon>
                    </a>
               </div>
@@ -89,6 +89,22 @@
             <button class="next" onclick="nextSlider();">
                 <ion-icon name="arrow-forward-outline"></ion-icon>
             </button>
+        </div>
+    </div>
+    <!-- cart -->
+    <div class="cart-section">
+        <div class="cart-header">
+            <h2>SHOPPING CART</h2>
+            <div class="closeCart">
+                <ion-icon name="close-outline" id="closeCart"></ion-icon>
+            </div>
+        </div>
+        <div class="cart_products">
+              <!-- add cart products in js -->
+        </div>
+        <div class="btn_control">
+            <button class="viewCart" onclick="viewCart();">View Cart</button>
+            <button class="checkout">Check Out</button>
         </div>
     </div>
     <!-- info -->
@@ -194,5 +210,6 @@
     </footer>
     <script src="../JavaScript/index.js"></script>
     <script src="../JavaScript/main.js"></script>
+    <script src="../JavaScript/cart.js"></script>
 </body>
 </html>
