@@ -12,6 +12,38 @@ document.getElementById("scrollBtn").addEventListener("click", function() {
     document.body.scrollTop = 0; 
     document.documentElement.scrollTop = 0; 
 });
+// nav 
+var nav = document.getElementById('header');
+var scrollUp = "scroll-up";
+var scrollDown = "scroll-down";
+var lastScroll = 0;
+
+if (window.addEventListener) {
+    window.addEventListener("scroll", scrollHandler);
+} else {
+    window.attachEvent("scroll", scrollHandler);
+}
+
+function scrollHandler() {
+     var currentScroll = window.pageYOffset;
+     if (currentScroll === 0) {
+         nav.classList.remove(scrollDown);
+         nav.classList.remove(scrollUp);
+        return;
+     }
+     if (currentScroll > lastScroll && !nav.classList.contains(scrollDown)) {
+                // down
+        nav.classList.remove(scrollUp);
+        nav.classList.add(scrollDown);
+    } else if (currentScroll < lastScroll && nav.classList.contains(scrollDown)) {
+                // up
+        nav.classList.remove(scrollDown);
+        nav.classList.add(scrollUp);
+    }
+    lastScroll = currentScroll;
+}
+
+// cart 
 let closeCart = document.querySelector('.closeCart');
 let iconCart = document.querySelector('.icon-cart');
 let body = document.querySelector('body');

@@ -32,8 +32,8 @@ ul{
 }
 main{
     width: 100%;
-    min-height: calc(100vh - 150px);
-    margin-top: 150px;
+    min-height: 100vh;
+    /* margin-top: 150px; */
 }
 .product-name{
     cursor: pointer;
@@ -69,11 +69,12 @@ main{
 /* --------------------------- header -------------------------------  */
 header{
     width: 100%;
-    position: fixed;
+    z-index: 1000;
+    /* position: fixed;
     top: 0;
     right: 0;
     left: 0;
-    z-index: 60;
+    z-index: 60; */
 }
 .header_top{
     background-color: white;
@@ -92,7 +93,20 @@ header{
     width: 100px;
 }
 nav{
+    position: relative;
     background-color: white;
+}
+
+.scroll-down {
+    position: static;
+    top: initial;
+    left: initial;
+}
+
+.scroll-up {
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 nav ul{
     list-style: none;
@@ -131,7 +145,7 @@ header nav li:hover::after {
     top: 0;
     right: -400px;
     bottom: 0;
-    z-index: 999;
+    z-index: 9999;
     padding: 24px;
     display: flex;
     flex-direction: column;
@@ -501,6 +515,9 @@ body.showCart .cart-section{
     }
     .productDetails {
         grid-template-columns: 1fr;
+    }
+    .toast-overlay{
+        top: -1000px;
     }
     .toast-overlay.show{
         top: 300px;

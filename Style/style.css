@@ -2,7 +2,7 @@
 .slider{
     width: 100%;
     height: calc(100vh - 150px);
-    margin-top: 150px;
+    /* margin-top: 150px; */
     position: relative;
     overflow: hidden;
 }
