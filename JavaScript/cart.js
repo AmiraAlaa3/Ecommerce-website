@@ -1,5 +1,7 @@
 let cart = [];
-let products = []
+let products = [];
+let total = 0;
+let cartCounter = document.getElementById("cart-counter");
 loadCart();
 getData();
 async function getData() {
@@ -11,6 +13,7 @@ function loadCart() {
     let storedCart = localStorage.getItem('cart');
     if (storedCart) {
         cart = JSON.parse(storedCart);
+        console.log("cart = "+ cart.length) 
     }
 }
 
@@ -94,9 +97,12 @@ function checkCart(){
         cartText.classList.add("empty");
         cartText.innerHTML = `Your cart is empty.`;
         document.querySelector(".btn_control").style.display = "none";
+        cartCounter.innerHTML = 0;
     } else {
         cartText.classList.remove("empty");
         addCartToHTML();
+        let totalQuantity = cart.reduce((sum, product) => sum + product.quantity, 0);
+        cartCounter.innerHTML = totalQuantity;
         document.querySelector(".btn_control").style.display = "flex";
     }
 }

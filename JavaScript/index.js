@@ -85,23 +85,19 @@ function displayTrendingProducts(trendingProducts){
     </div>`
     }
     
-    document.querySelector(".top_products .products").innerHTML = content;
-
-    let addToCartLinks = document.querySelectorAll('.addToCart');
-    addToCartLinks.forEach(link => {
-        link.addEventListener('click', function(event) {
-            event.preventDefault();
-            let productCard = event.target.closest('.product-card');
-            if (productCard && productCard.dataset.id) {
-                let id_product = productCard.dataset.id;
-                console.log(id_product)
-                addToCart(id_product);
-            }
+document.querySelector(".top_products .products").innerHTML = content;
+let addToCartLinks = document.querySelectorAll('.addToCart');
+addToCartLinks.forEach(link => {
+    link.addEventListener('click', function(event) {
+        event.preventDefault();
+        let productCard = event.target.closest('.product-card');
+        if (productCard && productCard.dataset.id) {
+            let id_product = productCard.dataset.id;
+            addToCart(id_product);
+        }
         });
     });
 }
-
-
 
 function displayDetails(productId){
     window.location.href = `ProductDetails.html?productId=${productId}`;
