@@ -9,8 +9,9 @@
     <meta name="keywords" content="clothes, women, men, fashion, bags, jewelry, SA FashionStyle, latest trends, stylish clothing, accessories">
     <meta name="author" content="SA_FashionStyle">
     <link rel="icon" href="./../images/logowhite.jpg" type="image/x-icon">
+    <!-- css -->
     <link rel="stylesheet" href="../Style/main.css">
-    <link rel="stylesheet" href="./../Style/style.css">
+    <link rel="stylesheet" href="../Style/cartPage.css">
     <!-- Google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -55,9 +56,44 @@
             </menu>
         </nav>
     </header>
-    <main>
+    <main class="cart_page">
         <div class="container">
-     
+            <h1>Shopping Bag</h1>
+             <div class="content">
+                <div class="left_side_cart">
+                    <div class="cart_title">
+                      <h2>My shopping bag <span id="cart_counts"></span></h2>
+                    </div>
+                    <div class="cart_products">
+                      <!-- add cart products in js -->
+                    </div>
+                 </div>
+                 <div class="right_side_cart">
+                    <div class="Promotional_code">
+                        <h2>
+                            Do you have a Promotional Code?
+                        </h2>
+                        <div class="apply_code">
+                            <input type="text" id="code" placeholder="Promo code">
+                            <button >Done</button>
+                        </div>
+                    </div>
+                    <div class="summary">
+                        <h2>Order Summary</h2>
+                        <div class="summary_price">
+                            <div>
+                                <h4>Subtotal</h4>
+                                <span id="Subtotal">EG 1000.00</span>
+                            </div>
+                            <div>
+                                <h4>sh</h4>
+                                <span id="Subtotal">EG 1000.00</span>
+                            </div>
+
+                        </div>
+                    </div>
+                 </div>
+             </div>
         </div>
     </main>
    
@@ -72,12 +108,16 @@
         <div class="cart_products">
          <!-- add cart products in js -->
         </div>
+        <div class="cart_total">
+            <h3>Total:</h3>
+            <span id="total_price"></span>
+        </div>
         <div class="btn_control">
-            <button class="viewCart">View Cart</button>
+            <button class="viewCart" onclick="viewCart();">View Cart</button>
             <button class="checkout">Check Out</button>
         </div>
     </div>
-    <footer class="footer">
+    <footer class="footer black-footer">
         <div class="footer-top">
            <div class="footer-logo">
                <img src="../images/logo_block.jpg" alt="logo" width="140">
@@ -114,7 +154,6 @@
     </footer>
     <button id="scrollBtn"><ion-icon name="arrow-up-outline" id="btn-up"></ion-icon></button>
     <script src="../JavaScript/main.js"></script>
-    <script src="../JavaScript/getDetails.js"></script>
     <script src="../JavaScript/cart.js"></script>
 </body>
 </html>

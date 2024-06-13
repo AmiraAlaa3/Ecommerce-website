@@ -171,6 +171,7 @@ header nav li:hover::after {
     padding: 24px;
     display: flex;
     flex-direction: column;
+    transition: all 0.4s;
 }
 body.showCart .cart-section{
     right: 0;
@@ -269,6 +270,21 @@ body.showCart .cart-section{
     align-items: center;
     cursor: pointer;
 }
+.cart_total{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+}
+.cart_total h3{
+    font-size: 16px;
+    font-weight: 500;
+}
+.cart_total #total_price{
+    font-size: 16px;
+    font-weight: 600;
+    color: red;
+}
 .buttom_card{
     display: flex;
     justify-content: space-between;
@@ -293,19 +309,19 @@ body.showCart .cart-section{
     width: 30px;
     height: 30px;
     border: 0;
-    background: 0 0;
+    background-color: transparent;
     color:  rgb(134 134 134 / 50%);
     font-size: 24px;
     display: flex;
     align-items: center;
     cursor: pointer;
 }
-.buttom_card #minus{
+.buttom_card .minus{
     left: 0;
     text-align: left;
     padding-left: 15px;
 }
-.buttom_card #plus{
+.buttom_card .plus{
     right: 0;
     text-align: right;
     padding-right: 15px;
@@ -382,7 +398,7 @@ body.showCart .cart-section{
     background-color: #fff;
     padding: 4% 8%;
 }
-.login-footer{
+.black-footer{
     background-color: #000000;
     color: #fff;
 }
@@ -473,7 +489,7 @@ body.showCart .cart-section{
         width: 100%;
         margin-top: 20px;
     }
-    .news{
+    .news.hight{
         height: 300px;
         flex-wrap: wrap;
         gap: 20px;
@@ -509,7 +525,7 @@ body.showCart .cart-section{
     .products .content{
         grid-template-columns: 1fr;
     }
-    .news{
+    .news.hight{
         height: 300px;
         flex-wrap: wrap;
         gap: 20px;

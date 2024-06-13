@@ -94,11 +94,15 @@ addToCartLinks.forEach(link => {
         if (productCard && productCard.dataset.id) {
             let id_product = productCard.dataset.id;
             addToCart(id_product);
+            showCart();
         }
         });
     });
 }
-
+function showCart(){
+    let body = document.querySelector('body');
+    body.classList.add('showCart');
+}
 function displayDetails(productId){
     window.location.href = `ProductDetails.html?productId=${productId}`;
 }

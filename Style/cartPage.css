@@ -1,0 +1,47 @@
+h2{
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+.cart_page .container{
+    padding:4% 8%;
+}
+.cart_page .container h1{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+.cart_page .content{
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+   gap: 40px;
+}
+.apply_code{
+    width: 100%;
+    margin-bottom: 60px;
+}
+.apply_code #code{
+    width: 60%;
+    padding: 14px 20px;
+    border: none;
+    background-color: #f1f1f1;
+    color: #868686;
+    font-size: 14px;
+}
+.apply_code #code:focus{
+    outline: none;
+}
+.apply_code #code::placeholder {
+    color: #565555;
+    font-size: 14px;
+}
+.apply_code button{
+    background-color: #000;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 12px 30px;
+    border: none;
+    cursor: pointer;
+}

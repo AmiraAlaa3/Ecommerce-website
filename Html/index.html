@@ -103,6 +103,10 @@
         <div class="cart_products">
               <!-- add cart products in js -->
         </div>
+        <div class="cart_total">
+            <h3>Total:</h3>
+            <span id="total_price"></span>
+        </div>
         <div class="btn_control">
             <button class="viewCart" onclick="viewCart();">View Cart</button>
             <button class="checkout">Check Out</button>
@@ -160,7 +164,7 @@
         </div>
     </div>
     <!-- news -->
-    <div class="news">
+    <div class="news hight">
         <div class="news-text">
             <h4>Newsletter</h4>
             <p>
@@ -168,7 +172,7 @@
             </p>
         </div>
         <div class="Subscribe-form">
-            <input type="email" name="email" placeholder="Enter Your Email">
+            <input type="email" name="email" placeholder="Enter Your Email" autocomplete="off">
             <button type="submit" value="submit">
                 <img src="../images/send.png" alt="send-data" width="30"/>
             </button>

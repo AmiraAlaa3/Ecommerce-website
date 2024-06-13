@@ -46,7 +46,7 @@ function showToast() {
 
 function showCart(){
     let body = document.querySelector('body');
-    body.classList.toggle('showCart');
+    body.classList.add('showCart');
 }
 
 function showCheckAnimation(){
