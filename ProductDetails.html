@@ -8,10 +8,11 @@
         jewelry, and more. Elevate your style with our curated collections.">
         <meta name="keywords" content="clothes, women, men, fashion, bags, jewelry, SA FashionStyle, latest trends, stylish clothing, accessories">
         <meta name="author" content="SA_FashionStyle">
-        <link rel="icon" href="./../images/logowhite.jpg" type="image/x-icon">
+        <link rel="icon" href="images/logowhite.jpg" type="image/x-icon">
         <!-- css -->
-        <link rel="stylesheet" href="../Style/login.css">
-        <link rel="stylesheet" href="../Style/main.css">
+    
+        <link rel="stylesheet" href="Style/productDetails.css">
+        <link rel="stylesheet" href="Style/main.css">
         <!-- Google font -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,6 +20,10 @@
         <!-- icon -->
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+        <!-- animation icon -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.6/lottie.min.js"></script>
+
         <title>SA__FashionStyle</title>
     </head>
 <body>
@@ -35,7 +40,7 @@
                     <ion-icon name="logo-whatsapp"></ion-icon>
                 </a>
               </div>
-              <img src="../images/logo_block.jpg" alt="page logo" id="logo">
+              <img src="images/logo_block.jpg" alt="page logo" id="logo">
               <div class="header_actions">
                 <div id="display_login">
                   <span id="user_name">Amira</span>
@@ -62,32 +67,38 @@
             </menu>
         </nav>
     </header>
-    <section id="login">
-       <div class="container">
-        <h1 class="section-header">Login</h1>
-        <div id="form">
-            <label for="email">Email</label>
-            <input type="text" name="email" placeholder="Email" id="email" onblur="validationEmail();">
-            <span id="invalidEmail" class="alert">Email is not a valid</span>
-            <label for="password">Password</label>
-            <input type="password" name="Password" placeholder="Password" id="password" onblur="validPassword();">
-            <span id="invalidPass" class="alert">Password must be 8 chars at least</span>
-            <label for="confirmPassword">Confirm Password</label>
-            <input type="password" name="confirmPassword" 
-            placeholder="Confirm Password" 
-            id="confirmPassword" 
-            onblur="validConfirmPassword();">
-            <span id="invalidConfirmPass" class="alert">Password Not Match</span>
-            <div class="submit">
-                <button id="btn-login">Sign In</button> 
-                <a href="signup.html" id="signup">New customer? Sign up for an account</a>
-            </div>  
+    <main>
+        <div class="container">
+        <div class="productDetails">
+            <div class="images">
+                <img id="product_image" src="" alt="productDetails">
+            </div>
+            <div class="details">
+                <span class="category_name"></span>
+                <h2 class="product_name"></h2>
+                <h3 class="product_price"></h3>
+                <p class="product_des"></p>
+                <div class="buttons">
+                    <div class="counts">
+                          <button id="minus" class="counts_btns">-</button>
+                          <input type="number" inputmode="numeric" name="productCount" min="1" step="1" max="999"
+                           class="product_count" id="productCount" value="1">
+                          <button id="plus" class="counts_btns">+</button>
+                    </div>
+                    <button id="btn_add">Add To Cart</button>
+                </div>
+            </div>
         </div>
-       </div>
-        
-    </section>
-    <button id="scrollBtn"><ion-icon name="arrow-up-outline" id="btn-up"></ion-icon></button>
-     <!-- cart -->
+        </div>
+    </main>
+    <!-- alert -->
+    <div class="toast-overlay" id="toast-overlay">
+        <div class="success-msg">
+            <div id="checkIcon" style="width: 100px; height: 100px;"></div>
+            <h4>Your item has been added to the shopping bag</h4>
+        </div>
+    </div> 
+    <!-- cart -->
     <div class="cart-section">
         <div class="cart-header">
             <h2>SHOPPING CART</h2>
@@ -96,7 +107,7 @@
             </div>
         </div>
         <div class="cart_products">
-              <!-- add cart products in js -->
+         <!-- add cart products in js -->
         </div>
         <div class="cart_total">
             <h3>Total:</h3>
@@ -107,10 +118,10 @@
             <button class="checkout" onclick="checkOut();">Check Out</button>
         </div>
     </div>
-    <footer class="footer black-footer">
+    <footer class="footer">
         <div class="footer-top">
            <div class="footer-logo">
-               <img src="../images/logo_block.jpg" alt="logo" width="140">
+               <img src="images/logo_block.jpg" alt="logo" width="140">
                <p>The customer is at the heart of our unique business model, which includes design.</p>
            </div>
            <div class="footer-list">
@@ -142,8 +153,9 @@
            </p>
        </div>
     </footer>
-    <script src="../JavaScript/main.js"></script>
-   <script src="../JavaScript/validation.js"></script>
-   <script src="../JavaScript/cart.js"></script>
+    <button id="scrollBtn"><ion-icon name="arrow-up-outline" id="btn-up"></ion-icon></button>
+    <script src="JavaScript/main.js"></script>
+    <script src="JavaScript/getDetails.js"></script>
+    <script src="JavaScript/cart.js"></script>
 </body>
 </html>

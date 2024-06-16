@@ -8,9 +8,10 @@
         jewelry, and more. Elevate your style with our curated collections.">
         <meta name="keywords" content="clothes, women, men, fashion, bags, jewelry, SA FashionStyle, latest trends, stylish clothing, accessories">
         <meta name="author" content="SA_FashionStyle">
-        <link rel="icon" href="./../images/logowhite.jpg" type="image/x-icon">
-        <link rel="stylesheet" href="../Style/main.css">
-        <link rel="stylesheet" href="../Style/login.css">
+        <link rel="icon" href="images/logowhite.jpg" type="image/x-icon">
+        <!-- css -->
+        <link rel="stylesheet" href="Style/login.css">
+        <link rel="stylesheet" href="Style/main.css">
         <!-- Google font -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,16 +35,22 @@
                     <ion-icon name="logo-whatsapp"></ion-icon>
                 </a>
               </div>
-              <img src="../images/logo_block.jpg" alt="page logo" id="logo">
+              <img src="images/logo_block.jpg" alt="page logo" id="logo">
               <div class="header_actions">
-                   <a href="login.html">
-                    <ion-icon name="person-circle-outline"></ion-icon>
-                   </a>
-                   <a href="cart.html">
-                     <ion-icon name="cart-outline"></ion-icon>
-                     <span id="cart-counter">0</span>
-                   </a>
-              </div>
+                <div id="display_login">
+                  <span id="user_name">Amira</span>
+                  <a href="#" id="logout" title="Logout" onclick="logout();">
+                   <ion-icon name="log-out-outline"></ion-icon>
+                  </a>
+                </div>
+                <a href="login.html" title="Login" id="login_btn">
+                 <ion-icon name="person-circle-outline"></ion-icon>
+                </a>
+                <a href="#" class="icon-cart">
+                  <ion-icon name="cart-outline"></ion-icon>
+                  <span id="cart-counter">0</span>
+                </a>
+           </div>
         </div>
         <nav>
             <menu>
@@ -57,24 +64,53 @@
     </header>
     <section id="login">
        <div class="container">
-        <h1 class="section-header">Create account</h1>
+        <h1 class="section-header">Login</h1>
         <div id="form">
-            <input type="text" name="fname" placeholder="First Name" id="fname">
-            <input type="text" name="lname" placeholder="Last Name" id="lname">
-            <input type="text" name="email" placeholder="Email" id="email">
-            <input type="password" name="Password" placeholder="Password" id="password">
+            <label for="email">Email</label>
+            <input type="text" name="email" placeholder="Email" id="email" onblur="validationEmail();">
+            <span id="invalidEmail" class="alert">Email is not a valid</span>
+            <label for="password">Password</label>
+            <input type="password" name="Password" placeholder="Password" id="password" onblur="validPassword();">
+            <span id="invalidPass" class="alert">Password must be 8 chars at least</span>
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" name="confirmPassword" 
+            placeholder="Confirm Password" 
+            id="confirmPassword" 
+            onblur="validConfirmPassword();">
+            <span id="invalidConfirmPass" class="alert">Password Not Match</span>
             <div class="submit">
-                <button id="btn-login">Create</button> 
-                <a href="index.html" id="signup">Return to store</a>
+                <button id="btn-login">Sign In</button> 
+                <a href="signup.html" id="signup">New customer? Sign up for an account</a>
             </div>  
         </div>
        </div>
         
     </section>
-    <footer class="footer login-footer">
+    <button id="scrollBtn"><ion-icon name="arrow-up-outline" id="btn-up"></ion-icon></button>
+     <!-- cart -->
+    <div class="cart-section">
+        <div class="cart-header">
+            <h2>SHOPPING CART</h2>
+            <div class="closeCart">
+                <ion-icon name="close-outline" id="closeCart"></ion-icon>
+            </div>
+        </div>
+        <div class="cart_products">
+              <!-- add cart products in js -->
+        </div>
+        <div class="cart_total">
+            <h3>Total:</h3>
+            <span id="total_price"></span>
+        </div>
+        <div class="btn_control">
+            <button class="viewCart" onclick="viewCart();">View Cart</button>
+            <button class="checkout" onclick="checkOut();">Check Out</button>
+        </div>
+    </div>
+    <footer class="footer black-footer">
         <div class="footer-top">
            <div class="footer-logo">
-               <img src="../images/logo_block.jpg" alt="logo" width="140">
+               <img src="images/logo_block.jpg" alt="logo" width="140">
                <p>The customer is at the heart of our unique business model, which includes design.</p>
            </div>
            <div class="footer-list">
@@ -102,9 +138,12 @@
        <div class="footer-bottom">
            <p class="footer-company-name">
                © 2024 All right reserved.Made with <ion-icon name="heart"></ion-icon>
-                by <a href="https://www.upwork.com/freelancers/~01a11a163a8ee98a35" id="author">Amira Alaa</a>
+                by <a href="https://www.upwork.com/freelancers/~01a11a163a8ee98a35" target="_blank" id="author">Amira Alaa</a>
            </p>
        </div>
-   </footer>
+    </footer>
+    <script src="JavaScript/main.js"></script>
+   <script src="JavaScript/validation.js"></script>
+   <script src="JavaScript/cart.js"></script>
 </body>
 </html>

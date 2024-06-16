@@ -8,11 +8,9 @@
         jewelry, and more. Elevate your style with our curated collections.">
         <meta name="keywords" content="clothes, women, men, fashion, bags, jewelry, SA FashionStyle, latest trends, stylish clothing, accessories">
         <meta name="author" content="SA_FashionStyle">
-        <link rel="icon" href="./../images/logowhite.jpg" type="image/x-icon">
-        <!-- css -->
-    
-        <link rel="stylesheet" href="../Style/productDetails.css">
-        <link rel="stylesheet" href="../Style/main.css">
+        <link rel="icon" href="images/logowhite.jpg" type="image/x-icon">
+        <link rel="stylesheet" href="Style/main.css">
+        <link rel="stylesheet" href="Style/login.css">
         <!-- Google font -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,10 +18,6 @@
         <!-- icon -->
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
-        <!-- animation icon -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.6/lottie.min.js"></script>
-
         <title>SA__FashionStyle</title>
     </head>
 <body>
@@ -40,22 +34,16 @@
                     <ion-icon name="logo-whatsapp"></ion-icon>
                 </a>
               </div>
-              <img src="../images/logo_block.jpg" alt="page logo" id="logo">
+              <img src="images/logo_block.jpg" alt="page logo" id="logo">
               <div class="header_actions">
-                <div id="display_login">
-                  <span id="user_name">Amira</span>
-                  <a href="#" id="logout" title="Logout" onclick="logout();">
-                   <ion-icon name="log-out-outline"></ion-icon>
-                  </a>
-                </div>
-                <a href="login.html" title="Login" id="login_btn">
-                 <ion-icon name="person-circle-outline"></ion-icon>
-                </a>
-                <a href="#" class="icon-cart">
-                  <ion-icon name="cart-outline"></ion-icon>
-                  <span id="cart-counter">0</span>
-                </a>
-           </div>
+                   <a href="login.html">
+                    <ion-icon name="person-circle-outline"></ion-icon>
+                   </a>
+                   <a href="cart.html">
+                     <ion-icon name="cart-outline"></ion-icon>
+                     <span id="cart-counter">0</span>
+                   </a>
+              </div>
         </div>
         <nav>
             <menu>
@@ -67,61 +55,26 @@
             </menu>
         </nav>
     </header>
-    <main>
-        <div class="container">
-        <div class="productDetails">
-            <div class="images">
-                <img id="product_image" src="" alt="productDetails">
-            </div>
-            <div class="details">
-                <span class="category_name"></span>
-                <h2 class="product_name"></h2>
-                <h3 class="product_price"></h3>
-                <p class="product_des"></p>
-                <div class="buttons">
-                    <div class="counts">
-                          <button id="minus" class="counts_btns">-</button>
-                          <input type="number" inputmode="numeric" name="productCount" min="1" step="1" max="999"
-                           class="product_count" id="productCount" value="1">
-                          <button id="plus" class="counts_btns">+</button>
-                    </div>
-                    <button id="btn_add">Add To Cart</button>
-                </div>
-            </div>
+    <section id="login">
+       <div class="container">
+        <h1 class="section-header">Create account</h1>
+        <div id="form">
+            <input type="text" name="fname" placeholder="First Name" id="fname">
+            <input type="text" name="lname" placeholder="Last Name" id="lname">
+            <input type="text" name="email" placeholder="Email" id="email">
+            <input type="password" name="Password" placeholder="Password" id="password">
+            <div class="submit">
+                <button id="btn-login">Create</button> 
+                <a href="index.html" id="signup">Return to store</a>
+            </div>  
         </div>
-        </div>
-    </main>
-    <!-- alert -->
-    <div class="toast-overlay" id="toast-overlay">
-        <div class="success-msg">
-            <div id="checkIcon" style="width: 100px; height: 100px;"></div>
-            <h4>Your item has been added to the shopping bag</h4>
-        </div>
-    </div> 
-    <!-- cart -->
-    <div class="cart-section">
-        <div class="cart-header">
-            <h2>SHOPPING CART</h2>
-            <div class="closeCart">
-                <ion-icon name="close-outline" id="closeCart"></ion-icon>
-            </div>
-        </div>
-        <div class="cart_products">
-         <!-- add cart products in js -->
-        </div>
-        <div class="cart_total">
-            <h3>Total:</h3>
-            <span id="total_price"></span>
-        </div>
-        <div class="btn_control">
-            <button class="viewCart" onclick="viewCart();">View Cart</button>
-            <button class="checkout" onclick="checkOut();">Check Out</button>
-        </div>
-    </div>
-    <footer class="footer">
+       </div>
+        
+    </section>
+    <footer class="footer login-footer">
         <div class="footer-top">
            <div class="footer-logo">
-               <img src="../images/logo_block.jpg" alt="logo" width="140">
+               <img src="images/logo_block.jpg" alt="logo" width="140">
                <p>The customer is at the heart of our unique business model, which includes design.</p>
            </div>
            <div class="footer-list">
@@ -149,13 +102,9 @@
        <div class="footer-bottom">
            <p class="footer-company-name">
                © 2024 All right reserved.Made with <ion-icon name="heart"></ion-icon>
-                by <a href="https://www.upwork.com/freelancers/~01a11a163a8ee98a35" target="_blank" id="author">Amira Alaa</a>
+                by <a href="https://www.upwork.com/freelancers/~01a11a163a8ee98a35" id="author">Amira Alaa</a>
            </p>
        </div>
-    </footer>
-    <button id="scrollBtn"><ion-icon name="arrow-up-outline" id="btn-up"></ion-icon></button>
-    <script src="../JavaScript/main.js"></script>
-    <script src="../JavaScript/getDetails.js"></script>
-    <script src="../JavaScript/cart.js"></script>
+   </footer>
 </body>
 </html>
