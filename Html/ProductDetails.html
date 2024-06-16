@@ -42,14 +42,20 @@
               </div>
               <img src="../images/logo_block.jpg" alt="page logo" id="logo">
               <div class="header_actions">
-                   <a href="login.html">
-                    <ion-icon name="person-circle-outline"></ion-icon>
-                   </a>
-                   <a href="#" class="icon-cart">
-                     <ion-icon name="cart-outline"></ion-icon>
-                     <span id="cart-counter">0</span>
-                   </a>
-              </div>
+                <div id="display_login">
+                  <span id="user_name">Amira</span>
+                  <a href="#" id="logout" title="Logout" onclick="logout();">
+                   <ion-icon name="log-out-outline"></ion-icon>
+                  </a>
+                </div>
+                <a href="login.html" title="Login" id="login_btn">
+                 <ion-icon name="person-circle-outline"></ion-icon>
+                </a>
+                <a href="#" class="icon-cart">
+                  <ion-icon name="cart-outline"></ion-icon>
+                  <span id="cart-counter">0</span>
+                </a>
+           </div>
         </div>
         <nav>
             <menu>
@@ -88,7 +94,6 @@
     <!-- alert -->
     <div class="toast-overlay" id="toast-overlay">
         <div class="success-msg">
-            <!-- <ion-icon name="checkmark-circle-outline"></ion-icon> -->
             <div id="checkIcon" style="width: 100px; height: 100px;"></div>
             <h4>Your item has been added to the shopping bag</h4>
         </div>
@@ -110,7 +115,7 @@
         </div>
         <div class="btn_control">
             <button class="viewCart" onclick="viewCart();">View Cart</button>
-            <button class="checkout">Check Out</button>
+            <button class="checkout" onclick="checkOut();">Check Out</button>
         </div>
     </div>
     <footer class="footer">

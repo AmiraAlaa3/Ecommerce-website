@@ -109,6 +109,24 @@ nav{
     top: 0;
     left: 0;
 }
+#display_login{
+    display: none;
+}
+.header_actions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header_actions #user_name{
+    font-size: 12px;
+    font-weight: 500;
+    margin-right: 4px;
+}
+.header_actions a{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+}
 nav ul{
     list-style: none;
     display: flex;
@@ -269,6 +287,7 @@ body.showCart .cart-section{
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    padding-left: 1px;
 }
 .cart_total{
     display: flex;
@@ -560,6 +579,15 @@ body.showCart .cart-section{
     .toast-overlay.show{
         top: 300px;
     }
+    .cart_page .content{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 50px;
+     }
+
+     .cart_products {
+        padding-right: 0;
+     }
 }
 /* to remove updown from input number */
 /* Chrome, Safari, Edge, Opera */

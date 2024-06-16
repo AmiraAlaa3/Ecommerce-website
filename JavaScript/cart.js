@@ -3,9 +3,15 @@ let products = [];
 let totalPrice = document.getElementById("total_price");
 let cartCounter = document.getElementById("cart-counter");
 let cartItemsCount = document.getElementById("cart_counts");
+const cartTextElements = document.querySelectorAll(".cart_products");
+const btnControl = document.querySelector(".btn_control");
+const cartTotal = document.querySelector(".cart_total");
 
 loadCart();
-getData();
+getData().then(() => {
+    checkCart();
+});
+
 async function getData() {
     let response = await fetch('../json/products.json');
     let json = await response.json();
@@ -15,7 +21,6 @@ function loadCart() {
     let storedCart = localStorage.getItem('cart');
     if (storedCart) {
         cart = JSON.parse(storedCart);
-        console.log("cart = "+ cart.length) 
     }
 }
 
@@ -70,8 +75,7 @@ function addCartToHTML() {
             </div>
         </div>`;
     });
-    const cartProductsElements = document.querySelectorAll(".cart_products");
-    cartProductsElements.forEach(element => {
+    cartTextElements.forEach(element => {
         element.innerHTML = content;
     });;
 }
@@ -95,33 +99,71 @@ function decreaseQuantity(index) {
         removeFromCart(index);
     }
 }
+
 function updateTotalPrice() {
     let total = cart.reduce((sum, product) => {
         let price = parseFloat(product.price.replace('$', ''));
         return sum + (price * product.quantity);
     }, 0);
     totalPrice.innerHTML = `$${total.toFixed(2)}`;
+    localStorage.setItem("total price" , total + 70);
+    return total;
 }
+
 // Initial call to display the cart products on page load
-let cartText = document.querySelector(".cart_products")
 function checkCart(){
     if (cart.length == 0) {
-        cartText.classList.add("empty");
-        cartText.innerHTML = `Your cart is empty.`;
+        cartTextElements.forEach(element => {
+            element.classList.add("empty");
+            element.innerHTML = "Your cart is empty";
+        })
         cartCounter.innerHTML = 0;
-        document.querySelector(".btn_control").style.display = "none";
-        document.querySelector(".cart_total").style.display = "none";
+        btnControl.style.display = "none";
+        cartTotal.style.display = "none";
+        checkCartPage(0,0);
     } else {
-        cartText.classList.remove("empty");
+        cartTextElements.forEach(element => {
+            element.classList.remove("empty");
+        })
         addCartToHTML();
         let totalQuantity = cart.reduce((sum, product) => sum + product.quantity, 0);
         cartCounter.innerHTML = totalQuantity;
-        if(cartItemsCount != null){
-             cartItemsCount.innerHTML = `(${totalQuantity} items)`;
-        }
-        document.querySelector(".btn_control").style.display = "flex";
-        document.querySelector(".cart_total").style.display = "flex";
-        updateTotalPrice();
+        btnControl.style.display = "flex";
+        cartTotal.style.display = "flex";
+        let total = updateTotalPrice();
+        checkCartPage(total,totalQuantity);       
     }
+}
+// Add cart page not cart section
+function checkCartPage(total,totalQuantity){
+    if (window.location.pathname === "/Html/cartPage.html") {
+        if (cart.length == 0) {
+            cartItemsCount.innerHTML = `(0 items)`;
+            document.getElementById("Subtotal").innerHTML = `$0.00`;
+            document.getElementById("total_order").innerHTML = `$0.00`;
+        }
+        else{
+            cartItemsCount.innerHTML = `(${totalQuantity} items)`;
+            displayInCartPage(total);
+        }
+    }
+}
+function displayInCartPage(total){
+    let subTotal = document.getElementById("Subtotal");
+    subTotal.innerHTML = `$${total.toFixed(2)}`;
+    let totalOrder= parseFloat(subTotal.innerHTML.replace('$', '')) + 70;
+    document.getElementById("total_order").innerHTML = `$${totalOrder.toFixed(2)}`;
+}
+function checkOut(){
+    let email = localStorage.getItem('email');
+    let password = localStorage.getItem('password');
+    if (cart.length != 0) {
+        if(email && password){
+          window.location.href = "/Html/checkout.html";
+        }
+        else {
+          window.location.href = "login.html";
+        }
+     }
 }
 checkCart();

@@ -1,5 +1,5 @@
 h2{
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 400;
     margin-bottom: 24px;
 }
@@ -15,14 +15,15 @@ h2{
 .cart_page .content{
    display: grid;
    grid-template-columns: repeat(2,1fr);
-   gap: 40px;
+   gap: 100px;
 }
 .apply_code{
+    display: flex;
     width: 100%;
     margin-bottom: 60px;
 }
 .apply_code #code{
-    width: 60%;
+    width: 65%;
     padding: 14px 20px;
     border: none;
     background-color: #f1f1f1;
@@ -43,5 +44,54 @@ h2{
     font-weight: 700;
     padding: 12px 30px;
     border: none;
+    cursor: pointer;
+    width: 34%;
+    text-transform: uppercase;
+}
+.summary_price{
+    background-color: #f1f1f1;
+    padding:20px;
+    margin-bottom: 24px;
+}
+.summary_price div{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding:12px 0;
+}
+.summary_price div:first-child{
+    position: relative;
+}
+.summary_price div:first-child::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+}
+.summary_price div h4{
+    font-size: 14px;
+    font-weight: 400;
+}
+.summary_price .Delivery{
+   color: #4c4c4c;
+}
+.summary_price div:last-child span,
+.summary_price div:last-child h4{
+    font-weight: 700;
+}
+.summary .checkout{
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    height: 48px;
+    transition: .25s ease-in-out !important;
+    margin-bottom: 40px;
     cursor: pointer;
 }

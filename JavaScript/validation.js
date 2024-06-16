@@ -19,6 +19,7 @@ submitBtn.addEventListener("click", function() {
     if(valid){
         savaData();
         reset();
+        setupUI();
         window.location.href = "index.html";
     }
 });

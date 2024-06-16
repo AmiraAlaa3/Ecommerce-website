@@ -9,9 +9,9 @@
         <meta name="keywords" content="clothes, women, men, fashion, bags, jewelry, SA FashionStyle, latest trends, stylish clothing, accessories">
         <meta name="author" content="SA_FashionStyle">
         <link rel="icon" href="./../images/logowhite.jpg" type="image/x-icon">
-        <link rel="stylesheet" href="../Style/main.css">
-        
+        <!-- css -->
         <link rel="stylesheet" href="../Style/login.css">
+        <link rel="stylesheet" href="../Style/main.css">
         <!-- Google font -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,21 +37,27 @@
               </div>
               <img src="../images/logo_block.jpg" alt="page logo" id="logo">
               <div class="header_actions">
-                   <a href="login.html">
-                    <ion-icon name="person-circle-outline"></ion-icon>
-                   </a>
-                   <a href="#" class="icon-cart">
-                     <ion-icon name="cart-outline"></ion-icon>
-                     <span id="cart-counter">0</span>
-                   </a>
-              </div>
+                <div id="display_login">
+                  <span id="user_name">Amira</span>
+                  <a href="#" id="logout" title="Logout" onclick="logout();">
+                   <ion-icon name="log-out-outline"></ion-icon>
+                  </a>
+                </div>
+                <a href="login.html" title="Login" id="login_btn">
+                 <ion-icon name="person-circle-outline"></ion-icon>
+                </a>
+                <a href="#" class="icon-cart">
+                  <ion-icon name="cart-outline"></ion-icon>
+                  <span id="cart-counter">0</span>
+                </a>
+           </div>
         </div>
         <nav>
             <menu>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="products.html">Shop</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
             </menu>
         </nav>
@@ -98,7 +104,7 @@
         </div>
         <div class="btn_control">
             <button class="viewCart" onclick="viewCart();">View Cart</button>
-            <button class="checkout">Check Out</button>
+            <button class="checkout" onclick="checkOut();">Check Out</button>
         </div>
     </div>
     <footer class="footer black-footer">
@@ -136,8 +142,8 @@
            </p>
        </div>
     </footer>
+    <script src="../JavaScript/main.js"></script>
    <script src="../JavaScript/validation.js"></script>
-   <script src="../JavaScript/main.js"></script>
    <script src="../JavaScript/cart.js"></script>
 </body>
 </html>
