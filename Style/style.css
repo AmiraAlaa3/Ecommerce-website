@@ -77,7 +77,10 @@
 .shop-btn:hover{
     background-color: #097a6e;
 }
-/* ------------------------end slider ------------------------ */
+/* ------------------------phone slider ------------------------ */
+.hero_for_phone{
+    display: none;
+}
 /* ------------------------- info section --------------------- */
 .information{
     width: 100%;
@@ -112,7 +115,7 @@
     min-height: 100vh;
 }
 .top_products .container{
-    padding:8%;
+    padding: 4% 8%;
 }
 .top_products .header{
     text-align: center;
@@ -189,6 +192,106 @@
     color: #696969;
     margin: 0;
 }
+/* ------------------------ collection --------------------- */
+.collection { 
+    padding: 60px 0;
+}
+
+.collection .container {
+    width: 100%;
+    padding-inline: 30px;
+    margin-bottom: 30px;
+}
+
+.collection-list {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 30px;
+}
+
+.collection-card {
+  background-color: gray;
+  min-height: 400px;
+  padding: 40px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.collection-card .card-title {
+     margin-bottom: 12px;
+}
+
+.collection-card .card-text {
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+  margin-block-end: auto;
+}
+
+.has-before,
+.has-after {
+  position: relative;
+  z-index: 1;
+}
+
+.has-before::before,
+.has-after::after {
+  content: "";
+  position: absolute;
+}
+.hover\:shine { 
+    overflow: hidden; 
+}
+
+.hover\:shine .has-bg-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  transition: 0.5s ease;
+}
+.hover\:shine:is(:hover, :focus) .has-bg-image { 
+    transform: scale(1.15); 
+}
+
+.hover\:shine::before {
+  top: 0;
+  left: -140%;
+  bottom: 0;
+  width: 100%;
+  background-image: linear-gradient(to right, transparent 50%, hsl(0, 0%, 100%, 0.3) 100%);
+  transform: skewX(-25deg);
+  transition: 0.5s ease;
+  z-index: 1;
+}
+
+.hover\:shine:is(:hover, :focus-within)::before { 
+    animation: shine 1s ease forwards; 
+}
+.btn-link {
+    color:#000;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    transition: 0.25s ease;
+}
+
+@keyframes shine {
+  0% { transform: skewX(-25deg) translateX(0); }
+  100% { transform: skewX(-25deg) translateX(250%); }
+}
+
+.has-bg-image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
 /* ------------------------ news ----------------------- */
 .news{
     width: 100%;

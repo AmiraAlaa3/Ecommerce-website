@@ -1,8 +1,11 @@
 var currentSlide = 1;
 window.addEventListener("load",function(){
-    if (document.querySelectorAll(".slide-content").length > 0) {
+    // slider not run in small window
+    if (window.innerWidth > 767) {
+    if (document.querySelectorAll(".slider .slide-content").length > 0) {
         theChecker();
         playSlider();
+    }
     }
     getTrendingProducts();
 });
