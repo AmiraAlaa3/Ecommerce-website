@@ -45,5 +45,5 @@ function clearCart() {
     localStorage.removeItem('cart');
 }
 function backHome() {
-    window.location.href = "../Html/index.html"; 
+    window.location.href = "index.html"; 
 }

@@ -159,7 +159,7 @@ function checkOut(){
     let password = localStorage.getItem('password');
     if (cart.length != 0) {
         if(email && password){
-          window.location.href = "/Html/checkout.html";
+          window.location.href = "checkout.html";
         }
         else {
           window.location.href = "login.html";
