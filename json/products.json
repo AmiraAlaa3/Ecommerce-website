@@ -14,9 +14,9 @@
         "name": "Miley Triangle Hair Scarf",
         "price": "$22.00",
         "images": [
-            "../images/Accessories/scrf1.webp",
-            "../images/Accessories/scrf2.webp",
-            "../images/Accessories/scrf3.webp"
+            "images/Accessories/scrf1.webp",
+            "images/Accessories/scrf2.webp",
+            "images/Accessories/scrf3.webp"
         ],
         "category": "Accessories",
         "isTrending":true,
@@ -27,7 +27,7 @@
         "name": "Platform Canvas Sneakers",
         "price": "$77.00",
         "images": [
-            "../images/Accessories/Platform-Canvas-Sneakers_03.webp"
+            "images/Accessories/Platform-Canvas-Sneakers_03.webp"
         ],
         "category": "Accessories",
         "description": "Platform Canvas Sneakers provide both comfort and height. Ideal for casual outings and adding a trendy touch to your look."
@@ -37,7 +37,7 @@
         "name": "Quilted Heeled Mule Sandal",
         "price": "$128.00",
         "images": [
-            "../images/Accessories/Quilted-Heeled-Mule-Sandal_01.webp"
+            "images/Accessories/Quilted-Heeled-Mule-Sandal_01.webp"
         ],
         "category": "Accessories",
         "description": "The Quilted Heeled Mule Sandal combines elegance and comfort. Perfect for dressing up any outfit with a touch of sophistication."
@@ -47,9 +47,9 @@
         "name": "Ultimate Crop Bandeau Tops",
         "price": "$22.00",
         "images": [
-            "../images/Woman/ultimate-crop-bandeau-tops_01.webp",
-            "../images/Woman/ultimate-crop-bandeau-tops_black_01.webp",
-            "../images/Woman/ultimate-crop-bandeau-tops_black_02.webp"
+            "images/Woman/ultimate-crop-bandeau-tops_01.webp",
+            "images/Woman/ultimate-crop-bandeau-tops_black_01.webp",
+            "images/Woman/ultimate-crop-bandeau-tops_black_02.webp"
         ],
         "category": "Woman",
         "isTrending": true,
@@ -60,8 +60,8 @@
         "name": "Adilette Slide Sandal",
         "price": "$85.00",
         "images": [
-            "../images/Accessories/Adilette-Slide-Sandal_01.webp",
-            "../images/Accessories/Adilette-Slide-Sandal_color_01.webp"
+            "images/Accessories/Adilette-Slide-Sandal_01.webp",
+            "images/Accessories/Adilette-Slide-Sandal_color_01.webp"
         ],
         "category": "Accessories",
         "description": "Adilette Slide Sandals are perfect for casual wear. They feature a comfortable footbed and easy slip-on design."
@@ -71,9 +71,9 @@
         "name": "Pieces Short Sleeve Sweater",
         "price": "$100.00",
         "images": [
-            "../images/Woman/Pieces-short-sleeve-sweater_01.webp",
-            "../images/Woman/Pieces-short-sleeve-sweater_02.webp",
-            "../images/Woman/Pieces-short-sleeve-sweater_03.webp"
+            "images/Woman/Pieces-short-sleeve-sweater_01.webp",
+            "images/Woman/Pieces-short-sleeve-sweater_02.webp",
+            "images/Woman/Pieces-short-sleeve-sweater_03.webp"
         ],
         "category": "Woman",
         "isTrending": true,
@@ -84,9 +84,9 @@
         "name": "Simona Ribbed Cardigan",
         "price": "$82.00 - $89.00",
         "images": [
-            "../images/Woman/Simona-Ribbed-Cardigan_05.webp",
-            "../images/Woman/Simona-Ribbed-Cardigan_03.webp",
-            "../images/Woman/SW1.webp"
+            "images/Woman/Simona-Ribbed-Cardigan_05.webp",
+            "images/Woman/Simona-Ribbed-Cardigan_03.webp",
+            "images/Woman/SW1.webp"
         ],
         "category": "Woman",
         "isTrending": true,
@@ -97,8 +97,8 @@
         "name": "Oversized T-shirt Multi-colors",
         "price": "$50.00",
         "images": [
-            "../images/Woman/image68.webp",
-            "../images/Woman/image67.webp"
+            "images/Woman/image68.webp",
+            "images/Woman/image67.webp"
         ],
         "category": "Woman",
         "isTrending": true,
@@ -109,8 +109,8 @@
         "name": "Classic Oversized Sweatshirt",
         "price": "$158.00",
         "images": [
-            "../images/Woman/classic-oversized-sweatshirt_01.webp",
-            "../images/Woman/classic-oversized-sweatshirt_04.webp"
+            "images/Woman/classic-oversized-sweatshirt_01.webp",
+            "images/Woman/classic-oversized-sweatshirt_04.webp"
         ],
         "category": "Woman",
         "description": "This Classic Oversized Sweatshirt is perfect for a cozy and relaxed look. Made from high-quality material for added comfort."
@@ -120,7 +120,7 @@
         "name": "Straw Floppy Hat",
         "price": "$54.00",
         "images": [
-            "../images/Accessories/straw-floppy-hat_03.webp"
+            "images/Accessories/straw-floppy-hat_03.webp"
         ],
         "category": "Accessories",
         "description": "The Straw Floppy Hat is a stylish accessory for sunny days. It offers great sun protection while adding a chic touch to your outfit."
@@ -130,7 +130,7 @@
         "name": "Cat-Eye Glasses 20257",
         "price": "$86.00",
         "images": [
-            "../images/Accessories/sunglasses1.webp"
+            "images/Accessories/sunglasses1.webp"
         ],
         "category": "Accessories",
         "description": "Cat-Eye Glasses 20257 feature a classic design with a modern twist. Perfect for adding a sophisticated touch to any look."
@@ -140,8 +140,8 @@
         "name": "Pride Sport Hip Pack",
         "price": "$39.00",
         "images": [
-            "../images/Bags/Pride-Sport-Hip-Pack-_04.webp",
-            "../images/Bags/Pride-Sport-Hip-Pack-_03.webp"
+            "images/Bags/Pride-Sport-Hip-Pack-_04.webp",
+            "images/Bags/Pride-Sport-Hip-Pack-_03.webp"
         ],
         "category": "Bags",
         "description": "The Pride Sport Hip Pack is perfect for carrying essentials hands-free. Features a vibrant design and multiple compartments for convenience."
@@ -151,8 +151,8 @@
         "name": "Dance Bag Nylon",
         "price": "$18.00",
         "images": [
-            "../images/Bags/p27-3_7e6d6ca6-5882-4c64-a166-577d894b0ac3.webp",
-            "../images/Bags/p27-1_1bcb95c6-a3da-4de5-b15e-ec08d4cb84b9.webp"
+            "images/Bags/p27-3_7e6d6ca6-5882-4c64-a166-577d894b0ac3.webp",
+            "images/Bags/p27-1_1bcb95c6-a3da-4de5-b15e-ec08d4cb84b9.webp"
         ],
         "category": "Bags",
         "description": "The Dance Bag Nylon is lightweight and durable, ideal for carrying dance gear or gym essentials. Features a sleek design and ample storage space."
@@ -162,7 +162,7 @@
         "name": "Knit Dress In Green",
         "price": "$188.00",
         "images": [
-            "../images/Woman/knit-dress-in-green_03.webp"
+            "images/Woman/knit-dress-in-green_03.webp"
         ],
         "category": "Woman",
         "description": "The Knit Dress In Green is a versatile piece that can be dressed up or down. Made from soft, comfortable material."
@@ -172,8 +172,8 @@
         "name": "Beanie In Chocolate Brown",
         "price": "$48.00",
         "images": [
-            "../images/Woman/beanie-in-chocolate-brown_03.webp",
-            "../images/Woman/beanie-in-chocolate-brown_02.webp"
+            "images/Woman/beanie-in-chocolate-brown_03.webp",
+            "images/Woman/beanie-in-chocolate-brown_02.webp"
         ],
         "category": "Woman",
         "description": "This Beanie In Chocolate Brown is perfect for keeping warm in style. Made from soft, stretchy fabric for a comfortable fit."
@@ -183,8 +183,8 @@
         "name": "Relaxed Gym Tank Top",
         "price": "$148.00",
         "images": [
-            "../images/Woman/relaxed-gym-tank-top_01.webp",
-            "../images/Woman/relaxed-gym-tank-top_04.webp"
+            "images/Woman/relaxed-gym-tank-top_01.webp",
+            "images/Woman/relaxed-gym-tank-top_04.webp"
         ],
         "category": "Woman",
         "description": "The Relaxed Gym Tank Top is perfect for workouts and casual wear. Made from breathable fabric for maximum comfort."
@@ -194,8 +194,8 @@
         "name": "Oversized Graphic Sweatshirt",
         "price": "$78.00",
         "images": [
-            "../images/Woman/image77.webp",
-            "../images/Woman/image76.webp"
+            "images/Woman/image77.webp",
+            "images/Woman/image76.webp"
         ],
         "category": "Woman",
         "description": "This Oversized Graphic Sweatshirt combines comfort and style. Perfect for a relaxed, casual look."
@@ -205,8 +205,8 @@
         "name": "Hoodie In Blue",
         "price": "$198.00",
         "images": [
-            "../images/man/hoodie-in-blue_01.webp",
-            "../images/man/hoodie-in-blue_02.webp"
+            "images/man/hoodie-in-blue_01.webp",
+            "images/man/hoodie-in-blue_02.webp"
         ],
         "category": "Man",
         "description": "The Hoodie In Blue offers both style and comfort. Made from high-quality material for a cozy fit."
@@ -216,8 +216,8 @@
         "name": "Jacket With Hood In Stone",
         "price": "$266.00",
         "images": [
-            "../images/man/jacket-with-hood-in-stone_02.webp",
-            "../images/man/jacket-with-hood-in-stone_04.webp"
+            "images/man/jacket-with-hood-in-stone_02.webp",
+            "images/man/jacket-with-hood-in-stone_04.webp"
         ],
         "category": "Man",
         "isTrending":true,
@@ -228,8 +228,8 @@
         "name": "Slim Formal Shirt In White",
         "price": "$198.00",
         "images": [
-            "../images/man/slim-formal-shirt-in-white_01.webp",
-            "../images/man/slim-formal-shirt-in-white_01.webp"
+            "images/man/slim-formal-shirt-in-white_01.webp",
+            "images/man/slim-formal-shirt-in-white_01.webp"
         ],
         "category": "Man",
         "description": "The Slim Formal Shirt In White is perfect for formal occasions. Made from high-quality fabric for a sharp, professional look."
@@ -239,8 +239,8 @@
         "name": "Tapered Pants In Camel",
         "price": "$106.00",
         "images": [
-            "../images/man/tapered-pants-in-camel-_01.webp",
-            "../images/man/tapered-pants-in-camel-_04.webp"
+            "images/man/tapered-pants-in-camel-_01.webp",
+            "images/man/tapered-pants-in-camel-_04.webp"
         ],
         "category": "Man",
         "description": "Tapered Pants In Camel offer a modern fit and stylish design. Perfect for both casual and formal wear."
@@ -250,7 +250,7 @@
         "name": "Sleeve Flower Print Revere",
         "price": "$52.00",
         "images": [
-            "../images/man/sleeve-flower-print-revere_02.webp"
+            "images/man/sleeve-flower-print-revere_02.webp"
         ],
         "category": "Man",
         "description": "The Sleeve Flower Print Revere shirt features a unique floral design. Ideal for adding a touch of style to your wardrobe."
@@ -260,8 +260,8 @@
         "name": "Color Block Bucket Hat",
         "price": "$35.00",
         "images": [
-            "../images/man/Color-block-bucket-hat_03.webp",
-            "../images/man/Color-block-bucket-hat_04.webp"
+            "images/man/Color-block-bucket-hat_03.webp",
+            "images/man/Color-block-bucket-hat_04.webp"
         ],
         "category": "Man",
         "description": "This Color Block Bucket Hat is perfect for a trendy look. It offers great sun protection and a stylish design."
@@ -271,8 +271,8 @@
         "name": "Cargo Pants With Front Pocket",
         "price": "$52.00",
         "images": [
-            "../images/man/cargo-pants-with-front-pocket_04.webp",
-            "../images/man/cargo-pants-with-front-pocket_03.webp"
+            "images/man/cargo-pants-with-front-pocket_04.webp",
+            "images/man/cargo-pants-with-front-pocket_03.webp"
         ],
         "category": "Man",
         "description": "Cargo Pants With Front Pocket are practical and stylish. Perfect for casual wear with plenty of storage space."
@@ -282,8 +282,8 @@
         "name": "Butterfly Charm Hoop Earrings",
         "price": "$71.00",
         "images": [
-            "../images/Jewelry/Butterfly-Charm-Hoop-Earring_03.webp",
-            "../images/Jewelry/Butterfly-Charm-Hoop-Earring_02.webp"
+            "images/Jewelry/Butterfly-Charm-Hoop-Earring_03.webp",
+            "images/Jewelry/Butterfly-Charm-Hoop-Earring_02.webp"
         ],
         "category": "Jewelry",
         "isTrending":true,
@@ -294,8 +294,8 @@
         "name": "Row Clear Cz Ring",
         "price": "$198.00",
         "images": [
-            "../images/Jewelry/ROW-CLEAR-CZ-RING_03.webp",
-            "../images/Jewelry/ROW-CLEAR-CZ-RING_02.webp"
+            "images/Jewelry/ROW-CLEAR-CZ-RING_03.webp",
+            "images/Jewelry/ROW-CLEAR-CZ-RING_02.webp"
         ],
         "category": "Jewelry",
         "description": "The Row Clear Cz Ring is a stunning piece of jewelry. Features sparkling cubic zirconia for a touch of elegance."
@@ -305,8 +305,8 @@
         "name": "Pin Clear Cz Ring",
         "price": "$71.00",
         "images": [
-            "../images/Jewelry/PIN-CLEAR-CZ-RING_01.webp",
-            "../images/Jewelry/PIN-CLEAR-CZ-RING_02.webp"
+            "images/Jewelry/PIN-CLEAR-CZ-RING_01.webp",
+            "images/Jewelry/PIN-CLEAR-CZ-RING_02.webp"
         ],
         "category": "Jewelry",
         "description": "Pin Clear Cz Ring is a stylish accessory. Made with high-quality materials and sparkling cubic zirconia."
@@ -316,8 +316,8 @@
         "name": "Gold Tone Clear Cz Ring",
         "price": "$106.00",
         "images": [
-            "../images/Jewelry/GOLD-TONE-CLEAR-CZ_03.webp",
-            "../images/Jewelry/GOLD-TONE-CLEAR-CZ_04.webp"
+            "images/Jewelry/GOLD-TONE-CLEAR-CZ_03.webp",
+            "images/Jewelry/GOLD-TONE-CLEAR-CZ_04.webp"
         ],
         "category": "Jewelry",
         "description": "The Gold Tone Clear Cz Ring adds a touch of luxury to any outfit. Features beautiful cubic zirconia set in gold-tone metal."
@@ -327,7 +327,7 @@
         "name": "Gold Tone Star & Moon Bracelet",
         "price": "$166.00",
         "images": [
-            "../images/Jewelry/Diamante-Butterfly-Necklace_01.webp"
+            "images/Jewelry/Diamante-Butterfly-Necklace_01.webp"
         ],
         "category": "Jewelry",
         "description": "The Gold Tone Star & Moon Bracelet is a celestial-inspired piece. Perfect for adding a touch of elegance to your look."
@@ -337,8 +337,8 @@
         "name": "Clear Cz Floral Letter Necklace",
         "price": "$195.00",
         "images": [
-            "../images/Jewelry/CLEAR-CZ-FLORAL-LETTER-NECKLACE_01.webp",
-            "../images/Jewelry/CLEAR-CZ-FLORAL-LETTER-NECKLACE_02.webp"
+            "images/Jewelry/CLEAR-CZ-FLORAL-LETTER-NECKLACE_01.webp",
+            "images/Jewelry/CLEAR-CZ-FLORAL-LETTER-NECKLACE_02.webp"
         ],
         "category": "Jewelry",
         "description": "The Clear Cz Floral Letter Necklace is a personalized piece. Features sparkling cubic zirconia in a floral design."
@@ -348,7 +348,7 @@
         "name": "Adjustable Bowline Necklace",
         "price": "$86.00",
         "images": [
-            "../images/Jewelry/ADJUSTABLE-BOWLINE-NECKLACE_01.webp"
+            "images/Jewelry/ADJUSTABLE-BOWLINE-NECKLACE_01.webp"
         ],
         "category": "Jewelry",
         "description": "The Adjustable Bowline Necklace is versatile and stylish. Can be worn at different lengths for a custom look."
@@ -358,9 +358,9 @@
         "name": "Denim Jacket Sun Bleached",
         "price": "$199.00",
         "images": [
-            "../images/Woman/Jacket-_-Sun-Bleached_01.webp",
-            "../images/Woman/Jacket-_-Sun-Bleached_02.webp",
-            "../images/Woman/Jacket-_-Sun-Bleached_03.webp"
+            "images/Woman/Jacket-_-Sun-Bleached_01.webp",
+            "images/Woman/Jacket-_-Sun-Bleached_02.webp",
+            "images/Woman/Jacket-_-Sun-Bleached_03.webp"
         ],
         "isTrending":true,
         "category": "Woman",
