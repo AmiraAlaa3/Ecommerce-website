@@ -136,7 +136,7 @@ function checkCart(){
 }
 // Add cart page not cart section
 function checkCartPage(total,totalQuantity){
-    if (window.location.pathname === "/Html/cartPage.html") {
+    if (window.location.pathname === "/cartPage.html") {
         if (cart.length == 0) {
             cartItemsCount.innerHTML = `(0 items)`;
             document.getElementById("Subtotal").innerHTML = `$0.00`;
