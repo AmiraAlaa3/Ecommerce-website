@@ -47,9 +47,9 @@
         "name": "Ultimate Crop Bandeau Tops",
         "price": "$22.00",
         "images": [
-            "images/Woman/ultimate-crop-bandeau-tops_01.webp",
-            "images/Woman/ultimate-crop-bandeau-tops_black_01.webp",
-            "images/Woman/ultimate-crop-bandeau-tops_black_02.webp"
+            "images/woman/ultimate-crop-bandeau-tops_01.webp",
+            "images/woman/ultimate-crop-bandeau-tops_black_01.webp",
+            "images/woman/ultimate-crop-bandeau-tops_black_02.webp"
         ],
         "category": "Woman",
         "isTrending": true,
@@ -71,9 +71,9 @@
         "name": "Pieces Short Sleeve Sweater",
         "price": "$100.00",
         "images": [
-            "images/Woman/Pieces-short-sleeve-sweater_01.webp",
-            "images/Woman/Pieces-short-sleeve-sweater_02.webp",
-            "images/Woman/Pieces-short-sleeve-sweater_03.webp"
+            "images/woman/Pieces-short-sleeve-sweater_01.webp",
+            "images/woman/Pieces-short-sleeve-sweater_02.webp",
+            "images/woman/Pieces-short-sleeve-sweater_03.webp"
         ],
         "category": "Woman",
         "isTrending": true,
@@ -84,9 +84,9 @@
         "name": "Simona Ribbed Cardigan",
         "price": "$82.00 - $89.00",
         "images": [
-            "images/Woman/Simona-Ribbed-Cardigan_05.webp",
-            "images/Woman/Simona-Ribbed-Cardigan_03.webp",
-            "images/Woman/SW1.webp"
+            "images/woman/Simona-Ribbed-Cardigan_05.webp",
+            "images/woman/Simona-Ribbed-Cardigan_03.webp",
+            "images/woman/SW1.webp"
         ],
         "category": "Woman",
         "isTrending": true,
@@ -97,8 +97,8 @@
         "name": "Oversized T-shirt Multi-colors",
         "price": "$50.00",
         "images": [
-            "images/Woman/image68.webp",
-            "images/Woman/image67.webp"
+            "images/woman/image68.webp",
+            "images/woman/image67.webp"
         ],
         "category": "Woman",
         "isTrending": true,
@@ -109,8 +109,8 @@
         "name": "Classic Oversized Sweatshirt",
         "price": "$158.00",
         "images": [
-            "images/Woman/classic-oversized-sweatshirt_01.webp",
-            "images/Woman/classic-oversized-sweatshirt_04.webp"
+            "images/woman/classic-oversized-sweatshirt_01.webp",
+            "images/woman/classic-oversized-sweatshirt_04.webp"
         ],
         "category": "Woman",
         "description": "This Classic Oversized Sweatshirt is perfect for a cozy and relaxed look. Made from high-quality material for added comfort."
@@ -162,7 +162,7 @@
         "name": "Knit Dress In Green",
         "price": "$188.00",
         "images": [
-            "images/Woman/knit-dress-in-green_03.webp"
+            "images/woman/knit-dress-in-green_03.webp"
         ],
         "category": "Woman",
         "description": "The Knit Dress In Green is a versatile piece that can be dressed up or down. Made from soft, comfortable material."
@@ -172,8 +172,8 @@
         "name": "Beanie In Chocolate Brown",
         "price": "$48.00",
         "images": [
-            "images/Woman/beanie-in-chocolate-brown_03.webp",
-            "images/Woman/beanie-in-chocolate-brown_02.webp"
+            "images/woman/beanie-in-chocolate-brown_03.webp",
+            "images/woman/beanie-in-chocolate-brown_02.webp"
         ],
         "category": "Woman",
         "description": "This Beanie In Chocolate Brown is perfect for keeping warm in style. Made from soft, stretchy fabric for a comfortable fit."
@@ -183,8 +183,8 @@
         "name": "Relaxed Gym Tank Top",
         "price": "$148.00",
         "images": [
-            "images/Woman/relaxed-gym-tank-top_01.webp",
-            "images/Woman/relaxed-gym-tank-top_04.webp"
+            "images/woman/relaxed-gym-tank-top_01.webp",
+            "images/woman/relaxed-gym-tank-top_04.webp"
         ],
         "category": "Woman",
         "description": "The Relaxed Gym Tank Top is perfect for workouts and casual wear. Made from breathable fabric for maximum comfort."
@@ -194,8 +194,8 @@
         "name": "Oversized Graphic Sweatshirt",
         "price": "$78.00",
         "images": [
-            "images/Woman/image77.webp",
-            "images/Woman/image76.webp"
+            "images/woman/image77.webp",
+            "images/woman/image76.webp"
         ],
         "category": "Woman",
         "description": "This Oversized Graphic Sweatshirt combines comfort and style. Perfect for a relaxed, casual look."
@@ -358,9 +358,9 @@
         "name": "Denim Jacket Sun Bleached",
         "price": "$199.00",
         "images": [
-            "images/Woman/Jacket-_-Sun-Bleached_01.webp",
-            "images/Woman/Jacket-_-Sun-Bleached_02.webp",
-            "images/Woman/Jacket-_-Sun-Bleached_03.webp"
+            "images/woman/Jacket-_-Sun-Bleached_01.webp",
+            "images/woman/Jacket-_-Sun-Bleached_02.webp",
+            "images/woman/Jacket-_-Sun-Bleached_03.webp"
         ],
         "isTrending":true,
         "category": "Woman",

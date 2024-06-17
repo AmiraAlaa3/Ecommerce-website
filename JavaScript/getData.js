@@ -17,7 +17,9 @@ function displayProducts(){
         container+=`
         <div class="product-card" data-id="${productsContainer[i].id}">
         <div class="card-img">
-            <img  onclick=displayDetails(${productsContainer[i].id}); src=${productsContainer[i].images[0]}>
+            <img  onclick=displayDetails(${productsContainer[i].id});
+             src=${productsContainer[i].images[0]}
+             alt=${productsContainer[i].name}>
             <a href=""  class="addToCart">
                 <ion-icon name="cart-outline" class="Cart"></ion-icon>
             </a>
