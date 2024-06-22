@@ -3,7 +3,7 @@ let linkName=document.getElementsByClassName("categories_link");
 
 getData()
 async function getData(category = null){
-    let response = await  fetch('../json/products.json');
+    let response = await  fetch('json/products.json');
     let json=await response.json();
     productsContainer=json;
     if (category) {

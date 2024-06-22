@@ -25,7 +25,7 @@ function showCheckAnimation(){
          renderer: 'svg',
          loop: false,
          autoplay: true,
-         path: '../json/AnimationCheckoutPage.json' 
+         path: 'json/AnimationCheckoutPage.json' 
      });
 }
 

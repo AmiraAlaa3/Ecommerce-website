@@ -10,7 +10,6 @@
         <meta name="author" content="SA_FashionStyle">
         <link rel="icon" href="images/logowhite.jpg" type="image/x-icon">
         <!-- css -->
-    
         <link rel="stylesheet" href="Style/productDetails.css">
         <link rel="stylesheet" href="Style/main.css">
         <!-- Google font -->
@@ -43,11 +42,12 @@
               <img src="images/logo_block.jpg" alt="page logo" id="logo">
               <div class="header_actions">
                 <div id="display_login">
-                  <span id="user_name">Amira</span>
-                  <a href="#" id="logout" title="Logout" onclick="logout();">
-                   <ion-icon name="log-out-outline"></ion-icon>
-                  </a>
-                </div>
+                    <!-- <span id="user_name">Welcome</span> -->
+                    <a href="#" id="logout" onclick="logout();">
+                      <span id="signout">Sign Out</span>
+                      <ion-icon name="log-out-outline"></ion-icon>
+                    </a>
+                  </div>
                 <a href="login.html" title="Login" id="login_btn">
                  <ion-icon name="person-circle-outline"></ion-icon>
                 </a>
@@ -87,6 +87,7 @@
                     </div>
                     <button id="btn_add">Add To Cart</button>
                 </div>
+                
             </div>
         </div>
         </div>

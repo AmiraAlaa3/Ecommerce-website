@@ -4,7 +4,7 @@
         "name": "Retro Sunglasses",
         "price": "$225.00",
         "images": [
-            "../images/Accessories/Retro-sunglasses_03.webp"
+            "images/Accessories/Retro-sunglasses_03.webp"
         ],
         "category": "Accessories",
         "description": "These Retro Sunglasses offer a vintage-inspired look with modern protection. Perfect for adding a stylish edge to any outfit."

@@ -12,6 +12,7 @@ document.getElementById("scrollBtn").addEventListener("click", function() {
     document.body.scrollTop = 0; 
     document.documentElement.scrollTop = 0; 
 });
+
 // nav 
 var nav = document.getElementById('header');
 var scrollUp = "scroll-up";
@@ -35,7 +36,8 @@ function scrollHandler() {
                 // down
         nav.classList.remove(scrollUp);
         nav.classList.add(scrollDown);
-    } else if (currentScroll < lastScroll && nav.classList.contains(scrollDown)) {
+    } 
+    else if (currentScroll < lastScroll && nav.classList.contains(scrollDown)) {
                 // up
         nav.classList.remove(scrollDown);
         nav.classList.add(scrollUp);

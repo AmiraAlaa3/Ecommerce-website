@@ -65,7 +65,7 @@ function playSlider() {
 }
 
 async function getTrendingProducts() {
-    let response = await fetch('../json/products.json');
+    let response = await fetch('json/products.json');
     let products = await response.json();
     let trendingProducts = products.filter(product => product.isTrending);
     displayTrendingProducts(trendingProducts);
@@ -77,7 +77,7 @@ function displayTrendingProducts(trendingProducts){
         <div class="product-card"  data-id="${trendingProducts[i].id}">
         <div class="card-img">
             <img src=${trendingProducts[i].images[0]}  onclick=displayDetails(${trendingProducts[i].id});>
-            <a href=""  class="addToCart">
+            <a href="" class="addToCart">
                 <ion-icon name="cart-outline" class="Cart"></ion-icon>
             </a>
         </div>

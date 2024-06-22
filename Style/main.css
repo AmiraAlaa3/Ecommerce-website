@@ -111,22 +111,31 @@ nav{
 }
 #display_login{
     display: none;
+    align-items: center;
+    justify-content: center;
 }
 .header_actions{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    
 }
+#signout,
 .header_actions #user_name{
     font-size: 12px;
     font-weight: 500;
     margin-right: 4px;
 }
-.header_actions a{
+.header_actions #logout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* .header_actions a{
     display: inline-block;
     width: 24px;
     height: 24px;
-}
+} */
 nav ul{
     list-style: none;
     display: flex;
@@ -183,13 +192,13 @@ header nav li:hover::after {
     background-color:#fff;
     position: fixed;
     top: 0;
-    right: -400px;
+    right: -100%;
     bottom: 0;
     z-index: 9999;
     padding: 24px;
     display: flex;
     flex-direction: column;
-    transition: all 0.4s;
+    transition: all 0.5s ease;
 }
 body.showCart .cart-section{
     right: 0;
@@ -527,6 +536,15 @@ body.showCart .cart-section{
 
 /* Small screens */
 @media (max-width: 767px) {
+    main{
+        padding: 4%;
+    }
+    .header_top ion-icon{
+        font-size: 20px;
+    }
+    .header_top img{
+        width: 80px;
+    }
     .slider{
         display: none;
     }
@@ -594,17 +612,36 @@ body.showCart .cart-section{
         font-size: 14px;
     }  
     /* for home page section top product */
-    .products {
-        grid-template-columns: 1fr;
+    .top_products .products {
+        grid-template-columns: repeat(2,1fr);
+        padding: 0;
     }
     /* for products page */
     .products .content{
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2,1fr);
+        padding: 0;
+    }
+    .productDetails {
+        gap: 40px;
     }
     .collection-list {
         grid-template-columns: 1fr;
         gap:20px;
     }
+    .cart-section{
+        width: 80%;
+    }
+    .btn_control{
+        flex-direction: column;
+    }
+    .btn_control .viewCart{
+        margin-bottom: 12px;
+        color: #000;
+    }
+    .btn_control .checkout,
+     .btn_control .viewCart{
+        width: 100%;
+     }
     .news.hight{
         height: 300px;
         flex-wrap: wrap;

@@ -4,7 +4,7 @@ let quantity = document.getElementById("productCount");
 getData()
 async function getData(){
     try {
-        let response = await fetch('../json/products.json');
+        let response = await fetch('json/products.json');
         let json = await response.json();
         let product = json.find(item => item.id == productId); 
 
@@ -62,7 +62,7 @@ function showCheckAnimation(){
          renderer: 'svg',
          loop: false,
          autoplay: true,
-         path: '../json/Animation check.json' 
+         path: 'json/Animation check.json' 
      });
 }
 document.getElementById("minus").addEventListener("click", function() {
